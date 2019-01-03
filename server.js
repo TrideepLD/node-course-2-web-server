@@ -24,9 +24,9 @@ app.use((req, res, next) => {
 });
 //app.use is how u register middleware
 
-app.use((req, res, next) => {
-    res.render('maintenance.hbs');
-});
+// app.use((req, res, next) => {
+//     res.render('maintenance.hbs');
+// });
 
 app.use(express.static(__dirname + '/public'));
 
@@ -71,5 +71,4 @@ app.get('/bad', (req, res) => {
 
 app.listen(port, () => {
     console.log(`server is up on port ${3000}`);
-    
 });
